@@ -25,9 +25,11 @@ function returnCrystalRandomNumber () {
 
     var randomCrystalNumber = Math.floor((Math.random() * 12) + 1);
     return randomCrystalNumber;
+
 }
 
 function returnRandomNumber () {
+
     var randomNumber = Math.floor((Math.random() * 100) + 19);
     return randomNumber;
 }
@@ -37,25 +39,32 @@ $('.crystal').on('click', function(event) {
 
       // calculate total score
       if (totalscore === 0) {
+
           totalscore = $(this).val();
           $('#score').text(totalscore);
-          console.log(totalscore);
-      } else if (parseInt(totalscore) == parseInt(randomNumber)) {
-         wins ++;
-         $('#wins').text(wins);
-         setupRandomNumbers();
-         totalscore = 0;
-         $('#score').text(totalscore);
-      } else if (parseInt(totalscore) > parseInt(randomNumber) ) {        
-          losses ++;
-          $('#losses').text(losses);
-          setupRandomNumbers();
-          totalscore = 0;
-          $('#score').text(totalscore);
+          //console.log(totalscore);
       }
       else {
+
           totalscore = parseInt(totalscore) + parseInt($(this).val());
           $('#score').text(totalscore);
+          
+          if(totalscore === parseInt(randomNumber)) {
+              wins ++;
+              $('#wins').text(wins);
+              setupRandomNumbers();
+              totalscore = 0;
+              $('#score').text(totalscore);
+              $('#result').text("You Won !");
+          }
+          else if (totalscore > parseInt(randomNumber)) {
+              losses ++;
+              $('#losses').text(losses);
+              setupRandomNumbers();
+              totalscore = 0;
+              $('#score').text(totalscore);
+              $('#result').text("You Lost !");
+          }
       } 
 
    });
