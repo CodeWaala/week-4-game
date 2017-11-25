@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+		crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/b2431001a1.js"></script>
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<header>
+              <label for="Crystal Collector">Crystal Collector</label>
+			</header>
+		</div>
+		<div class="instruction-section">
+           <p>You will be given a random number at the start of the game.</p>
+           <p>There are four crystals below. By clicking on a crystal you will add a specfic amount to your total score. </p>
+           <p>You will win the game by matching your total score to the random number, You lose the game if your total score goes above the random number.</p>
+           <p>The value of each crystal is hidden from you until you click on it.</p>
+           <p>Each time the game starts, the game will change the value of each crystal.</p>
+		</div>
+		<div class="game-box row">
+			<div class="game-result row">
+				<div class="random-number col-sm-4">
+					<label id="random-number" for="random-number"></label>
+				</div>
+				<div class="win-loss-window col-sm-6">
+                    <label>Wins: </label><label id="wins" for="wins"></label>
+                    <label>Losses: </label><label id="losses" for="losses"></label>
+				</div>
+			</div>
+			<div class="crystals col-sm-12">
+				<div class="row">
+					<button class="diamond crystal btn btn-outline-primary col-sm-2"><img class="img-thumbnail" src="./assets/images/diamond-icon.jpg" alt=""></button>
+					<button class="sapphire crystal btn btn-outline-primary col-sm-2"><img class="img-thumbnail" src="./assets/images/sapphire-icon.jpg" alt=""></button>
+					<button class="ruby crystal btn btn-outline-primary col-sm-2"><img class="img-thumbnail" src="./assets/images/ruby-icon.png" alt=""></button>
+					<button class="amethyst crystal btn btn-outline-primary col-sm-2"><img class="img-thumbnail" src="./assets/images/Amethyst-icon.jpg" alt=""></button>
+				</div>
+			</div>
+			<div class="score-section col-sm-12">
+				<div class="total col-sm-2">
+					<label for="">Your total score is: </label>
+				</div>
+				<div class="total col-sm-2">
+					<label id="score" for="score"></label>
+				</div>
+			</div>
+
+		</div>
+	</div>
+    <script src="./assets/js/game.js"></script>
+</body>
+
+</html>

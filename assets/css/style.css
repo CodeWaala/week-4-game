@@ -1,0 +1,60 @@
+html,body {
+ width: 100%;
+ height: 100%;
+ padding: 0;
+ margin: 0;
+ font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+ color: #000;
+ font-size: 18px;
+ background: #fff url("../images/cork-wallet.png");
+}
+
+header {
+    background-color: coral;
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.instruction-section {
+    background-color: lightyellow;
+    color: seagreen;
+    padding: 5px;
+}
+
+.game-result {
+    padding: 20px;
+}
+
+.random-number {
+    background-color: darkgreen;
+    margin: 5px;
+    padding: 10px;
+}
+
+.win-loss-window {
+    background-color: lightseagreen;
+    margin: 5px;
+    padding: 10px;
+}
+
+.score-section {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.crystals {
+    cursor: pointer;
+}
+
+.total {
+    background-color: darkgreen;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
